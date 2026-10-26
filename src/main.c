@@ -14,6 +14,8 @@
 #include "../headers/dijkstra.h"
 #include "../headers/visualization.h"
 #include "../headers/bfs_animation.h"
+#include "../headers/dfs_animation.h"
+#include "../headers/dijkstra_animation.h"
 
 #define MAX_NODES 100
 #define HASH_SIZE 100
@@ -565,7 +567,32 @@ static void bfsAnimationMenu(Case *c)
 
     animateBFS(c->graph, source, target);
 }
+static void dfsAnimationMenu(Case *c)
+{
+    int source;
 
+    printf("Enter starting person ID: ");
+
+    if (scanf("%d", &source) != 1)
+        return;
+
+    animateDFS(c->graph, source);
+}
+static void dijkstraAnimationMenu(Case *c)
+{
+    int source;
+    int target;
+
+    printf("Enter source person ID: ");
+    if (scanf("%d", &source) != 1)
+        return;
+
+    printf("Enter target person ID: ");
+    if (scanf("%d", &target) != 1)
+        return;
+
+    animateDijkstra(c->graph, source, target);
+}
 static void printMenu(void)
 {
     printf("\n========== CRIME INVESTIGATION SYSTEM ==========\n");
@@ -583,6 +610,8 @@ static void printMenu(void)
     printf("12. Undo last action\n");
     printf("13. Visualize investigation graph\n");
     printf("14. Animate BFS\n");
+    printf("15. Animate DFS\n");
+    printf("16. Animate Dijkstra\n");
     printf("0. Exit\n");
 }
 
@@ -671,6 +700,13 @@ int main(void)
                 bfsAnimationMenu(c);
                 break;
 
+            case 15:
+                dfsAnimationMenu(c);
+                break;
+
+            case 16:
+    dijkstraAnimationMenu(c);
+    break;
             case 0:
                 printf("Exiting. Goodbye!\n");
                 break;

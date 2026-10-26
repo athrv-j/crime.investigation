@@ -1,0 +1,14 @@
+digraph Dijkstra {
+rankdir=LR;
+label="Dijkstra - Step 9";
+labelloc=t;
+node [shape=circle, style=filled, fontname="Arial"];
+"1" [label="Person 1\nDist: 0", fillcolor="palegreen"];
+"2" [label="Person 2\nDist: 1", fillcolor="palegreen"];
+"3" [label="Person 3\nDist: 2", fillcolor="palegreen"];
+"4" [label="Person 4\nDist: 4", fillcolor="palegreen"];
+"1" -> "2" [label="contact (1)", color="green4", penwidth=4];
+"1" -> "3" [label="contact (5)", color="gray", penwidth=1];
+"2" -> "3" [label="contact (1)", color="green4", penwidth=4];
+"3" -> "4" [label="contact (2)", color="green4", penwidth=4];
+}
