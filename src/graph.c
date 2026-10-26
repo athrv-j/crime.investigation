@@ -52,7 +52,7 @@ int addEdge(Graph *g, int sourceId, int destId, char *type, int weight)
 
     EdgeNode *newEdge = malloc(sizeof(EdgeNode));
     if (newEdge == NULL)
-        return 0;
+        return 0 ;
 
     newEdge->destinationId = destId;
     strncpy(newEdge->type, type, sizeof(newEdge->type) - 1);

@@ -1,0 +1,1 @@
+digraph G { Rahul -> Amit; Rahul -> Neha; Amit -> Neha; }

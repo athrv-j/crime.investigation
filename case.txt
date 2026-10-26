@@ -1,0 +1,8 @@
+PERSONS: 1|a|s|21||
+PERSONS: 2|j|o|3|4|
+PERSONS: 3|wds|grg|33|hn|f
+PERSONS: 4|bfkjng|2|3|g|f
+EDGES: 1|2|contact|1|0
+EDGES: 1|3|contact|5|0
+EDGES: 2|3|contact|1|0
+EDGES: 3|4|contact|2|0
