@@ -1,3 +1,4 @@
+
 #ifndef DFS_H
 #define DFS_H
 
@@ -8,7 +9,7 @@ typedef struct {
     int count;
 } DFSResult;
 
-DFSResult* dfs(Graph *g, int source);
+DFSResult *dfs(Graph *g, int source);
 void freeDFSResult(DFSResult *result);
 
 #endif

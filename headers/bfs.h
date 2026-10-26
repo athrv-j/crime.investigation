@@ -1,3 +1,4 @@
+
 #ifndef BFS_H
 #define BFS_H
 
@@ -8,7 +9,7 @@ typedef struct {
     int pathLength;
 } BFSResult;
 
-BFSResult* bfs(Graph *g, int source, int target);
+BFSResult *bfs(Graph *g, int source, int target);
 void freeBFSResult(BFSResult *result);
 
 #endif

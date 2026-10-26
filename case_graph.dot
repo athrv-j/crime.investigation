@@ -1,0 +1,14 @@
+digraph Investigation {
+    rankdir=LR;
+    bgcolor="white";
+    node [shape=box, style=filled, fillcolor=lightblue];
+    edge [fontname="Arial"];
+    "Person 1";
+    "Person 2";
+    "Person 3";
+    "Person 4";
+    "Person 1" -> "Person 2" [label="contact | weight 1"];
+    "Person 1" -> "Person 3" [label="contact | weight 5"];
+    "Person 2" -> "Person 3" [label="contact | weight 1"];
+    "Person 3" -> "Person 4" [label="contact | weight 2"];
+}
