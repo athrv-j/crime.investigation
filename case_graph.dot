@@ -9,6 +9,7 @@ digraph Investigation {
     "Person 4";
     "Person 1" -> "Person 2" [label="contact | weight 1"];
     "Person 1" -> "Person 3" [label="contact | weight 5"];
+    "Person 1" -> "Person 4" [label="visit | weight 7"];
     "Person 2" -> "Person 3" [label="contact | weight 1"];
     "Person 3" -> "Person 4" [label="contact | weight 2"];
 }
